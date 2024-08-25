@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style type="text/tailwindcss">
+      @layer utilities {
+        .content-auto {
+          content-visibility: auto;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <script src="script.js"></script>
+    <div class="mx-auto my-2 w-[98%] lg:w-[1200px]">
+      <div
+        class="mx-auto w-[95%] my-5 p-0 border-2 border-black rounded-lg flex flex-col justify-start items-stretch overflow-hidden"
+      >
+        <div
+          class="m-0 flex flex-row justify-start items-center bg-gray-200 gap-x-1"
+        >
+          <div class="flex flex-row m-0 p-1 justify-start items-center">
+            <div class="p-1 rounded-full hover:bg-black/20 cursor-pointer">
+              <div class="rounded-full w-3.5 h-3.5 bg-red-500 p-1"></div>
+            </div>
+            <div class="p-1 rounded-full hover:bg-black/20 cursor-pointer">
+              <div class="rounded-full w-3.5 h-3.5 bg-yellow-400 p-1"></div>
+            </div>
+            <div class="p-1 rounded-full hover:bg-black/20 cursor-pointer">
+              <div class="rounded-full w-3.5 h-3.5 bg-green-600 p-1"></div>
+            </div>
+          </div>
+          <div
+            class="flex flex-row justify-start items-center bg-white p-1 px-2 rounded-t-xl m-0 gap-x-1 md:gap-x-2"
+          >
+            <ion-icon name="globe-outline" class="text-lg"></ion-icon>
+            <span class="text-sm md:text-base py-0.5 font-semibold"
+              >Wesite Name</span
+            >
+            <ion-icon
+              name="close-outline"
+              class="text-base p-1 rounded-full cursor-pointer hover:bg-black/20"
+            ></ion-icon>
+          </div>
+        </div>
+        <div
+          class="m-0 py-2 px-1 bg-gradient-to-t from-black/60 to-black/90 flex flex-row justify-between items-center"
+        >
+          <div
+            class="flex flex-row m-0 p-0 justify-start items-center gap-x-2 w-3/4"
+          >
+            <ion-icon
+              name="bookmark-outline"
+              class="hidden md:inline text-xl text-white cursor-pointer p-1 hover:bg-white/70 rounded-md hover:text-black"
+            ></ion-icon>
+            <form
+              class="bg-white w-full md:w-3/4 shadow-md py-1 px-2 flex flex-row justify-between items-center gap-x-2 overflow-hidden rounded-full"
+            >
+              <input
+                class="bg-transparent outline-none text-sm font-semibold md:text-base w-3/5"
+                placeholder="Search"
+              />
+              <ion-icon
+                name="search-outline"
+                class="text-xl p-0.5 cursor-pointer rounded-full active:bg-black/20"
+              ></ion-icon>
+            </form>
+          </div>
+          <div class="flex flex-row justify-end items-center m-0 p-0 gap-x-2">
+            <div
+              class="hidden md:flex flex flex-row justify-center rounded-full items-center md:inline h-8 w-8 bg-pink-500 p-1 cursor-pointer"
+            >
+              <span class="text-white rounded-full font-semibold text-lg"
+                >A</span
+              >
+            </div>
+            <ion-icon
+              name="ellipsis-vertical"
+              class="text-xl text-white cursor-pointer active:opacity-90"
+            ></ion-icon>
+          </div>
+        </div>
+        <div
+          class="relative w-full m-0 p-0 h-[500px] bg-white flex flex-col justify-center items-center"
+        >
+          <div class="w-full md:w-1/2 m-0 p-0">
+            <form
+              class="bg-white flex flex-row justify-center items-stretch w-full"
+            >
+              <input
+                class="w-3/4 bg-white border border-l-none border-gray-200 outline-none rounded-l-2xl p-2"
+                placeholder="Get notified on your email"
+              />
+              <button
+                type="button"
+                class="flex flex-row items-center p-2 gap-x-0.5 bg-green-600 text-white font-semibold rounded-r-2xl active:opacity-80"
+              >
+                <ion-icon
+                  name="notifications-outline"
+                  class="text-xl font-bold"
+                ></ion-icon>
+                <span class="hidden md:inline">Notify me</span>
+              </button>
+            </form>
+          </div>
+          <div
+            class="flex flex-row md:rounded-full overflow-hidden h-3/4 overflow-hidden justify-center items-center"
+          >
+            <img
+              src="/assets/image_2.png"
+              class="img-css object-cover md:object-contain"
+            />
+          </div>
+          <div
+            class="flex flex-col gap-y-2 md:gap-y-0 md:gap-x-2 md:flex-row w-full items-center justify-center"
+          >
+            <span class="text-xs inline font-semibold text-gray-400"
+              >For more follow us at:</span
+            >
+            <div class="flex flex-row items-center gap-x-2 justify-center text-2xl">
+              <ion-icon name="logo-instagram" class="p-1 md:p-2 cursor-pointer rounded-full hover:bg-black/20 active:opacity-90"></ion-icon>
+              <ion-icon name="logo-linkedin" class="p-1 md:p-2 cursor-pointer rounded-full hover:bg-black/20 active:opacity-90"></ion-icon>
+              <ion-icon name="logo-facebook" class="p-1 md:p-2 cursor-pointer rounded-full hover:bg-black/20 active:opacity-90"></ion-icon>
+              <ion-icon name="paper-plane-outline" class="p-1 cursor-pointer rounded-full hover:bg-black/20 active:opacity-90"></ion-icon>
+            </div>
+          </div>
+          <h1 class="absolute top-[100px] z-10 text-center text-3xl font-bold">
+            503
+          </h1>
+        </div>
+      </div>
+    </div>
+    <div
+      class="tape z-20 fixed top-[350px] w-full h-[36px] min-w-[1000px] block overflow-hidden p-0 m-0 whitespace-nowrap border-box"
+    >
+      <div
+        class="bg-transparent slideAnime inline-block w-full m-0 py-[6px] border-box whitespace-nowrap overflow-hidden"
+      >
+        <span
+          class="uppercase p-[4px] font-bold text-[16px] text-white bg-black/70 rounded-lg inline whitespace-nowrap"
+          >Under Construction</span
+        >
+        <span
+          class="uppercase p-[4px] mx-4 md:mx-8 font-bold text-[16px] text-white bg-black/70 rounded-lg inline whitespace-nowrap"
+          >...Coming Soon</span
+        >
+        <span
+          class="uppercase p-[4px] mx-4 md:mx-8 font-bold text-[16px] text-white bg-black/70 rounded-lg inline whitespace-nowrap"
+          >Work in progress</span
+        >
+        <span
+          class="uppercase p-[4px] mx-4 md:mx-8 font-bold text-[16px] text-white bg-black/70 rounded-lg inline whitespace-nowrap"
+          >Developers at work</span
+        >
+        <span
+          class="uppercase p-[4px] mx-4 md:mx-8 font-bold text-[16px] text-white bg-black/70 rounded-lg inline whitespace-nowrap"
+          >Thanks for showing interest</span
+        >
+      </div>
+      <div
+        class="bg-transparent slideAnime inline-block w-full m-0 py-[6px] border-box whitespace-nowrap overflow-hidden"
+      >
+        <span
+          class="uppercase p-[4px] mx-4 md:mx-8 font-bold text-[16px] text-white bg-black/70 rounded-lg inline whitespace-nowrap"
+          >Under Construction</span
+        >
+        <span
+          class="uppercase p-[4px] mx-4 md:mx-8 font-bold text-[16px] text-white bg-black/70 rounded-lg inline whitespace-nowrap"
+          >...Coming Soon</span
+        >
+        <span
+          class="uppercase p-[4px] mx-4 md:mx-8 font-bold text-[16px] text-white bg-black/70 rounded-lg inline whitespace-nowrap"
+          >Work in progress</span
+        >
+        <span
+          class="uppercase p-[4px] mx-4 md:mx-8 font-bold text-[16px] text-white bg-black/70 rounded-lg inline whitespace-nowrap"
+          >Developers at work</span
+        >
+        <span
+          class="uppercase p-[4px] mx-4 md:mx-8 font-bold text-[16px] text-white bg-black/70 rounded-lg inline whitespace-nowrap"
+          >Thanks for showing interest</span
+        >
+      </div>
+    </div>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
